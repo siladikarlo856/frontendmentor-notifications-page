@@ -1,5 +1,10 @@
 <script setup lang="ts"></script>
 
-<template>NotificationsPage template</template>
+<template>
+  <div class="container">NotificationsPage template</div>
+</template>
 
-<style scoped></style>
+<style scoped>
+.container {
+}
+</style>
