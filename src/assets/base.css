@@ -1,9 +1,16 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("RobotoFlex-VF.woff2") format("woff2") tech("variations"),
+    url("RobotoFlex-VF.woff2") format("woff2-variations");
+  font-weight: 100 1000;
+}
+
 /* color palette from style guide */
 :root {
   --c-primary-red: hsl(1, 90%, 64%);
   --c-primary-blue: hsl(219, 85%, 26%);
   --c-neutral-white: hsl(0, 0%, 100%);
-  --c-neutral-very-light-grayish-bue: hsl(210, 60%, 98%);
+  --c-neutral-very-light-grayish-blue: hsl(210, 60%, 98%);
   --c-neutral-light-grayish-blue-1: hsl(211, 68%, 94%);
   --c-neutral-light-grayish-blue-2: hsl(205, 33%, 90%);
   --c-neutral-grayish-blue: hsl(219, 14%, 63%);
@@ -23,10 +30,23 @@
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1); */
 
+  --color-background: var(--c-neutral-white);
+  --color-card-normal: var(--c-neutral-white);
+  --color-card-unread: var(--c-neutral-very-light-grayish-blue);
+  --color-card-info-text: var(--c-neutral-dark-grayish-blue);
+  --color-card-info-user: var(--c-neutral-very-dark-blue);
+  --color-card-info-created-at: var(--c-neutral-grayish-blue);
+
   --font-size: 16px;
   --font-family: "Plus Jakarta Sans", sans-serif, arial;
   --font-weight-normal: 500;
   --font-weight-bold: 800;
+
+  --padding-normal: 1rem;
+
+  --border-radius-small: 5px;
+  --border-radius-normal: 8px;
+  --border-radius-large: 10px;
 }
 
 *,
@@ -42,6 +62,7 @@ body {
   min-height: 100vh;
   font-family: var(--font-family);
   font-size: var(--font-size);
+  background-color: var(--color-background);
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
