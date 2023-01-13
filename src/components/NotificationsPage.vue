@@ -3,7 +3,7 @@
     <div class="header-container">
       <div class="left-container">
         <span class="notification-label">Notifications</span>
-        <span class="notification-badge">3</span>
+        <span class="notification-badge">{{ unreadNotificationCount }}</span>
       </div>
       <div class="right-container">
         <button @click="markAllAsRead">Mark all as read</button>
@@ -18,9 +18,16 @@
 <script setup lang="ts">
 import NotificationList from "./NotificationList.vue";
 import notifications from "@/data/data.json";
-import { ref } from "vue";
+import { ref, computed } from "vue";
 
 const notificationsRef = ref(notifications);
+const unreadNotificationCount = computed(() => {
+  let count = 0;
+  notificationsRef.value.forEach((el) => {
+    if (el.unread === true) count++;
+  });
+  return count;
+});
 
 function markAllAsRead() {
   notificationsRef.value.forEach((notification) => {
@@ -66,6 +73,7 @@ button {
   border: 0;
   background-color: transparent;
   color: var(--c-neutral-dark-grayish-blue);
+  font-family: var(--font-family);
   font-size: 1rem;
   font-weight: var(--font-weight-normal);
   cursor: pointer;
@@ -83,8 +91,10 @@ button:hover {
   * {
     font-size: 12px;
   }
+
   .notifications-page-container {
     width: 100vw;
+    margin: 0;
   }
 
   .left-container .notification-label {

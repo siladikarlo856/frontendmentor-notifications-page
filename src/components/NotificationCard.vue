@@ -108,7 +108,9 @@ img {
 
 .unread-sign-container {
   display: inline-block;
+  position: relative;
   margin-left: 0.25rem;
+  height: 1rem;
 }
 
 .unread-sign {
@@ -117,6 +119,8 @@ img {
   height: 0.5rem;
   background-color: var(--c-primary-red);
   border-radius: 50%;
+  position: absolute;
+  top: 7px;
 }
 
 .created-at {
