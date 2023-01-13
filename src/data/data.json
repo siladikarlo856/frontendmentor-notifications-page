@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "user": "Mark Webber",
     "avatar": "images/avatar-mark-webber.webp",
     "type": "post-reaction",
@@ -9,6 +10,7 @@
     "unread": true
   },
   {
+    "id": "2",
     "user": "Angela Gray",
     "avatar": "images/avatar-angela-gray.webp",
     "type": "follow",
@@ -18,6 +20,7 @@
     "unread": true
   },
   {
+    "id": "3",
     "user": "Jacob Thompson",
     "avatar": "images/avatar-jacob-thompson.webp",
     "type": "group-join",
@@ -27,6 +30,7 @@
     "unread": true
   },
   {
+    "id": "4",
     "user": "Rizky Hasanuddin",
     "avatar": "images/avatar-rizky-hasanuddin.webp",
     "type": "message-sent",
@@ -36,6 +40,7 @@
     "unread": false
   },
   {
+    "id": "5",
     "user": "Kimberly Smith",
     "avatar": "images/avatar-kimberly-smith.webp",
     "type": "picture-comment",
@@ -45,6 +50,7 @@
     "unread": false
   },
   {
+    "id": "6",
     "user": "Nathan Peterson",
     "avatar": "images/avatar-nathan-peterson.webp",
     "type": "post-reaction",
@@ -54,6 +60,7 @@
     "unread": false
   },
   {
+    "id": "7",
     "user": "Anna Kim",
     "avatar": "images/avatar-anna-kim.webp",
     "type": "group-left",

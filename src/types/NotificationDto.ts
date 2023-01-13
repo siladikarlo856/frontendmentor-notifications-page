@@ -8,6 +8,7 @@ export enum NotificationType {
 }
 
 export interface NotificationDto {
+  id: string;
   user: string;
   avatar: string;
   type: NotificationType;

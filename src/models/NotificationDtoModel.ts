@@ -1,6 +1,7 @@
 import type { NotificationDto } from "@/types/NotificationDto";
 import { NotificationType } from "@/types/NotificationDto";
 export class NotificationDtoModel implements Required<NotificationDto> {
+  id: string;
   user: string;
   avatar: string;
   type: NotificationType;
@@ -10,6 +11,7 @@ export class NotificationDtoModel implements Required<NotificationDto> {
   unread: boolean;
 
   constructor(data?: NotificationDto) {
+    this.id = data?.id || "";
     this.user = data?.user || "";
     this.avatar = data?.avatar || "";
     this.type = data?.type ? data.type : NotificationType.Follow;
