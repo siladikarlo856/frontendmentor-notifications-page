@@ -30,7 +30,7 @@
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1); */
 
-  --color-background: var(--c-neutral-white);
+  --color-background: var(--c-neutral-very-light-grayish-blue);
   --color-card-normal: var(--c-neutral-white);
   --color-card-unread: var(--c-neutral-very-light-grayish-blue);
   --color-card-info-text: var(--c-neutral-dark-grayish-blue);
@@ -47,6 +47,8 @@
   --border-radius-small: 5px;
   --border-radius-normal: 8px;
   --border-radius-large: 10px;
+
+  --fs-notification-label: 1.5rem;
 }
 
 *,

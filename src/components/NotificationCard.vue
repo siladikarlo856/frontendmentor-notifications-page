@@ -138,4 +138,8 @@ img {
 .message-container:hover {
   background-color: var(--c-neutral-light-grayish-blue-1);
 }
+
+.right-container img {
+  cursor: pointer;
+}
 </style>
