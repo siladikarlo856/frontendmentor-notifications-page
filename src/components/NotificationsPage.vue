@@ -19,8 +19,11 @@
 import NotificationList from "./NotificationList.vue";
 import notifications from "@/data/data.json";
 import { ref, computed } from "vue";
+import { NotificationDtoModel } from "@/models/NotificationDtoModel";
 
-const notificationsRef = ref(notifications);
+const notificationsRef = ref<NotificationDtoModel[]>(
+  notifications.map((el) => new NotificationDtoModel(el))
+);
 const unreadNotificationCount = computed(() => {
   let count = 0;
   notificationsRef.value.forEach((el) => {
