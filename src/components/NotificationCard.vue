@@ -9,9 +9,9 @@
       </div>
       <div class="info-container">
         <div class="notification-text">
-          <span class="user link">{{ notification?.user }}</span>
+          <span class="link user">{{ notification?.user }}</span>
           {{ notification?.description }}
-          <span v-if="isReferenceLink" class="link">
+          <span v-if="isReferenceLink" class="link reference">
             {{ notification?.reference }}</span
           >
           <div class="unread-sign-container">
@@ -93,7 +93,6 @@ img {
   color: var(--color-card-info-text);
 }
 .link {
-  color: var(--color-card-info-user);
   font-weight: var(--font-weight-bold);
   cursor: pointer;
 }
@@ -102,8 +101,12 @@ img {
   color: var(--c-primary-blue);
 }
 
-.notification-text {
-  /*  */
+.user {
+  color: var(--color-card-user);
+}
+
+.reference {
+  color: var(--color-card-reference);
 }
 
 .unread-sign-container {

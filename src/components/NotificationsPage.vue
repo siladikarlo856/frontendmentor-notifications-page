@@ -44,7 +44,7 @@ body {
   background-color: var(--c-neutral-very-light-grayish-blue);
 }
 .notifications-page-container {
-  width: 60vw;
+  width: 50vw;
   background-color: white;
   padding: 2rem;
   border-radius: 8px;

@@ -36,6 +36,8 @@
   --color-card-info-text: var(--c-neutral-dark-grayish-blue);
   --color-card-info-user: var(--c-neutral-very-dark-blue);
   --color-card-info-created-at: var(--c-neutral-grayish-blue);
+  --color-card-user: var(--c-neutral-very-dark-blue);
+  --color-card-reference: var(--c-neutral-dark-grayish-blue);
 
   --font-size: 16px;
   --font-family: "Plus Jakarta Sans", sans-serif, arial;
