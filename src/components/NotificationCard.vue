@@ -10,12 +10,18 @@
       <div class="info-container">
         <div class="notification-text">
           <span class="link user">{{ notification?.user }}</span>
-          {{ notification?.description }}
-          <span v-if="isReferenceLink" class="link reference">
+          <span data-testid="notification-description">{{
+            notification?.description
+          }}</span>
+          <span
+            v-if="isReferenceLink"
+            class="link reference"
+            data-testid="reference"
+          >
             {{ notification?.reference }}</span
           >
-          <div class="unread-sign-container">
-            <span v-if="notification?.unread" class="unread-sign"> </span>
+          <div v-if="notification?.unread" class="unread-sign-container">
+            <span class="unread-sign"> </span>
           </div>
         </div>
         <div class="created-at">{{ notification?.time }}</div>
